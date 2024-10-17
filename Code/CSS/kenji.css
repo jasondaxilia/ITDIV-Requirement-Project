@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  box-shadow: 0px 0px 15px 1px;
+}
+
+header .headers a {
+  text-decoration: none;
+}
+
+header .headers .JUDUL {
+  padding: 10px 25px;
+  font-size: 35px;
+}
+
+header .headers .full {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 2vw;
+}
+
+li {
+  list-style: none;
+}
+
+#adminId {
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+}
+
+#logOut {
+  position: absolute;
+  top: 5%;
+  background-color: white;
+}
+
+#adminId p {
+  font-weight: 100;
+  font-size: 17px;
+}
+
+#adminId img {
+  padding-left: 5px;
+}
+
+.caret {
+  height: 20px;
+  padding-left: 5px;
+}
+
+.innerCom {
+  border: 1px solid grey;
+  padding-right: 60px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px;
+  cursor: pointer;
+}
+
+.innerCom p {
+  padding-bottom: 10px;
+  padding-left: 7px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+/* Burger Bar */
+
+.menu {
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  top: 5vw;
+  right: 4vw;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #9e9d9d;
+  border-radius: 5px;
+}
+
+/* ----------------------------------- */
+
+.content {
+  margin-left: 100px;
+  margin-right: 140px;
+  padding-top: 70px;
+}
+
+.top {
+  border: 1px solid gray;
+  background-color: rgb(247, 247, 247);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.top p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.lower {
+  border: 1px solid gray;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.lower p {
+  padding-left: 14px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+img {
+  padding-left: 17px;
+  padding-bottom: 5px;
+}
+
+.instagram {
+  width: 27px;
+  height: 27px;
+}
+
+.facebook {
+  width: 27px;
+  height: 27px;
+}
+
+.twitter {
+  width: 27px;
+  height: 27px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(48, 44, 43);
+  text-align: center;
+  border: 1px solid black;
+  padding-top: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+
+  header .headers .full {
+    position: fixed;
+    height: 100vh;
+    left: -100%;
+    top: 60px;
+    gap: 0;
+    display: flex;
+    justify-content: right;
+    background-color: white;
+    width: 5%;
+  }
+
+  header .headers .full ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    width: 100%;
+    gap: 0px;
+  }
+
+  li {
+    padding: 7px;
+    text-align: right;
+  }
+
+  header .headers .full.active {
+    left: 0%;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WearHouse</title>
+    <link rel="stylesheet" href="/Code/CSS/Category.css" />
+</head>
+<body>
+  <div class="navbarUtama">
+    <nav class="Navbar">
+      <a class="logo" href="/code/HTML/Homepage.html">WearHouse</a>
+
+      <div class="Header">
+        <ul class="navMenu">
+          <li class="navItem">
+            <a href="#" class="navLink" style="color: rgba(124, 127, 129, 255)">Category</a>
+          </li>
+          <li class="navItem">
+            <a href="AboutUs.html" class="navLink" style="color: rgba(124, 127, 129, 255)">
+              About Us
+            </a>
+          </li>
+        </ul>
+        <ul class="navMenu">
+          <li class="navItem">
+            <a href="LogIn.html" class="navLink" style="color: rgba(124, 127, 129, 255)">
+              Login
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="Register.html" class="navLink" style="color: rgba(124, 127, 129, 255)">
+              Register
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      
+    </nav>
+  </div>
+
+      <div class="containerBody">
+        <h2>Product Categories</h2>
+        <input type="button" value="Add Category" id="addCategoryBtn">
+        <div class="category">
+          <table class="table">
+            <th>No</th>
+            <th>Category Name</th>
+            <th>Action</th>
+          </table>
+        </div>
+      </div>
+
+      <!-- Add Category Pop-up -->
+    <div id="addCategoryModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h3>Add Category</h3>
+          <label for="categoryName">Category</label>
+          <input type="text" id="categoryName" placeholder="Category Name">
+          <button onclick="AddCategory()" id="submitCategory" >Submit</button>
+      </div>
+  </div>
+
+      <!-- Edit Category Pop-up -->
+  <div id="editCategoryModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeEditCategoryModal">&times;</span>
+          <h2 style="padding-bottom: 20px;">Edit Category</h2>
+          <input type="text" id="editCategoryInput" placeholder="New Category Name">
+          <button  id="editCategoryButton" class="btn btn-primary" >Edit</button>
+        </div>
+  </div>
+
+  <!-- Delete Category Pop-up -->
+  <div id="deleteCategoryModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeDeleteCategoryModal">&times;</span>
+          <h2 style="padding-bottom: 20px;">Delete Category</h2>
+          <p>Are you sure you want to delete this category?</p>
+          <button id="deleteCategoryButton" class="btn btn-danger">Delete</button>
+      </div>
+  </div>
+
+      <footer class="Footer">
+        <div class="containerFooter">
+            <div class="Logo">
+            <a href="https://twitter.com/"
+                ><img src="/Assets/twitter (1).svg" alt="">
+            </a>
+            <a href="https://facebook.com/"
+                ><img src="/Assets/facebook (1).svg" alt=""></a
+            >
+            <a href="https://instagram.com/"
+                ><img src="/Assets/instagram (1).svg" alt="">
+            </div>
+            <div class="CopyRight">
+            Copyright © 2023 Jason Daxilia. All Rights Reserved
+            </div>
+        </div>
+      </footer>
+
+      <script src="/Code/JAVASCRIPT/burger.js"></script>
+      <script src="/Code/JAVASCRIPT/Category.js"></script>
+      <script src="/Code/JAVASCRIPT/TambahanCategory.js"></script>
+      <script src="/Code/JAVASCRIPT/PopUp.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </body>
+</html>

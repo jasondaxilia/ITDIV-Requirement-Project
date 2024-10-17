@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WearHouse</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/Code/CSS/LogIn.css" />
+  </head>
+  <body>
+    <div class="navbarUtama">
+      <nav class="Navbar">
+        <a class="logo" href="Homepage.html">WearHouse</a>
+
+        <div class="Header">
+          <ul class="navMenu">
+            <li class="navItem">
+              <a
+                href="Category.html"
+                class="navLink"
+                style="color: rgba(124, 127, 129, 255)"
+                >Category</a
+              >
+            </li>
+            <li class="navItem">
+              <a
+                href="AboutUs.html"
+                class="navLink"
+                style="color: rgba(124, 127, 129, 255)"
+              >
+                About Us
+              </a>
+            </li>
+          </ul>
+          <ul class="navMenu">
+            <li class="navItem">
+              <a
+                href="LogIn.html"
+                class="navLink"
+                style="color: rgba(124, 127, 129, 255)"
+              >
+                Login
+              </a>
+            </li>
+            <li class="navItem">
+              <a
+                href="Register.html"
+                class="navLink"
+                style="color: rgba(124, 127, 129, 255)"
+              >
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+
+    <div class="body">
+      <div class="containerBody">
+        <div class="kotakkotakan">
+          <div class="Login">Login</div>
+          <form action="loginForm" class="loginForm" name="loginForm">
+            <div class="email">
+              <label for=""> Email Address</label>
+              <input type="text" id="email" name="email" autocomplete="off"/>
+            </div>
+            <div class="password">
+              <label for="">Password</label>
+              <input type="password" id="password" name="password" autocomplete="off"/>
+            </div>
+            <div class="container">
+              <div class="filler"></div>
+              <div class="container1">
+                <div class="check">
+                  <input type="checkbox" /> <label for="">Remember me</label>
+                </div>
+                <div class="toggle">
+                  <input
+                    class="button"
+                    type="button"
+                    value="Login"
+                    onclick="validateLogin()"
+                  />
+                  <a href="">Forgot Your Password?</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="Footer">
+      <div class="containerFooter">
+        <div class="Logo">
+          <a href="https://twitter.com/">
+            <img src="/Assets/twitter (1).svg" alt="" />
+          </a>
+          <a href="https://facebook.com/">
+            <img src="/Assets/facebook (1).svg" alt="" />
+          </a>
+          <a href="https://instagram.com/">
+            <img src="/Assets/instagram (1).svg" alt="" />
+          </a>
+        </div>
+        <div class="CopyRight">
+          Copyright © 2023 Jason Daxilia. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="/Code/JAVASCRIPT/burger.js"></script>
+    <script src="/Code/JAVASCRIPT/LogIn.js"></script>
+  </body>
+</html>
